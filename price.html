@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" href="img/aboutus4.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1ed4f8d9ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    
+            <h4 class="Rising">Maleda Printing</h4>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <ul class="menu">
+                    <a href="Home of parallax scrolling.html">Home</a>
+                    <a href="Service.html">Services</a>
+                    <a href="price.html" class="active">Pricing</a>
+                    <a href="aboutus.html">About Us</a>
+                </ul>
+            </nav>
+        
+    </header>
+
+  <div class="alllist">
+    <!--first item-->
+    <div class="list">
+      <div class="item">
+        <img src="img/textileprinting.png" alt="">
+        <div class="content">
+          <div class="type-service">Textile Printing</div>
+          <div class="forms">
+            <form id="inputForm">
+            <div class="options">
+                <label for="outfitType">Outfit Type</label>
+        <select id="outfitType">
+            <option value="tshirt">T shirt</option>
+            <option value="longsleeve">Longsleeve</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="pollo">Pollo shirt</option>
+            <option value="scarf">Scarf</option>
+            <option value="cape">Cape</option>
+        </select>
+            </div>
+
+            <div class="options">
+            <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="1">
+            </div>
+            
+            <div class="options">
+                 <label for="materialType">Material Type</label>
+        <select id="materialType">
+            <option value="cotton">Cotton</option>
+            <option value="mg">MG</option>
+            <option value="cottonSublimation">Cotton Sublimation</option>
+            <option value="stretch">Stretch</option>
+        </select>
+            </div>
+
+            
+            <div class="options">
+               <label for="printingType">Printing Type</label>
+        <select id="printingType">
+            <option value="sublimation">Sublimation</option>
+            <option value="silkScreen">Silk Screen</option>
+            <option value="dtf">DTF</option>
+            <option value="other">Other</option>
+        </select> 
+            </div>
+
+
+            <div class="options">
+                 <label for="printSizeArea">Print Size Area</label>
+        <select id="printSizeArea">
+            <option value="a6">A6</option>
+            <option value="a5">A5</option>
+            <option value="a4">A4</option>
+            <option value="a3">A3</option>
+            <option value="above">Above</option>
+        </select>
+            </div>
+            </form>
+             <div class="result" id="result"></div>
+          </div>
+          <div class="button">
+            <button class="btn" onclick="calculatePrice()">Calculate</button>
+            <button type="button" class="reset" onclick="resetForm()">Reset</button>
+          </div>
+        </div>
+      </div>
+    <!--Second item-->
+      <div class="item">
+        <img src="img/paperwork.png" alt="">
+        <div class="content">
+          <div class="type-service">Gift Materials</div>
+          <div class="forms">
+            <form id="inputForm">
+              <div class="options">
+              <label for="printType">Print Type</label>
+        <select id="printType">
+            <option value="magazine">Magazine</option>
+            <option value="flayer">Flayer</option>
+            <option value="brochure">Brochure</option>
+            <option value="businessCard">Business Card</option>
+            <option value="calander">Calander</option>
+            <option value="letterHead">Letter Head</option>
+        </select>
+              </div>
+
+               <div class="options">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="1">
+    </div>
+
+    <div class="options">
+        <label for="pageNum">Page Num</label>
+        <input type="number" id="pageNum" min="1">
+    </div>
+
+            
+            <div class="options">
+               <label for="paperType">Paper Type</label>
+        <select id="paperType">
+            <option value="default">Default</option>
+            <option value="150gX250g">150 g x 250 g</option>
+            <option value="80gX250g">80 g x 250 g</option>
+            <option value="other">Other</option>
+        </select>
+            </div>
+
+            
+            <div class="options">
+                <label for="printSizeArea">Print Size Area</label>
+        <select id="printSizeArea">
+            <option value="a6">A6</option>
+            <option value="a5">A5</option>
+            <option value="a4">A4</option>
+            <option value="a3">A3</option>
+            <option value="custom">Custom</option>
+        </select>
+            </div>
+            </form>
+            <div class="result" id="result"></div>
+          </div>
+          <div class="button">
+           <button class="btn" onclick="calculatePaperPrice()">Calculate</button>
+            <button type="button" class="reset" onclick="resetForm()">Reset</button>
+          </div>
+        </div>
+      </div>
+    <!--third items-->
+      <div class="item">
+        <img src="img/graphic.jpg" alt="">
+        <div class="content">
+          <div class="type-service">Design and Branding</div>
+          <div class="forms">
+            <form id="pricingForm">
+            <div class="options">
+                <label for="packages">Packages</label>
+                <select id="packages" name="packages">
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="premium">Premium</option>
+                    <option value="exclusive">Exclusive</option>
+                    <option value="logoonly">Logo Only</option>
+                </select>
+            </div>
+            </form>
+            <div class="result" id="result"></div>
+          </div>
+          <div class="button">
+            <button type="submit" onclick="displayPrice()">Submit</button>
+            <button type="button" class="reset" onclick="resetForm()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--img slider-->
+<div class="allslider">
+  
+<div class="slide">
+  <img src="img/textileprinting.png" alt="">
+  <div class="tittle">Textile Printing</div>
+</div>
+
+<div class="slide">
+  <img src="img/paperwork.png" alt="">
+  <div class="tittle">Gift Materials</div>
+</div>
+
+<div class="slide">
+  <img src="img/graphic.jpg" alt="">
+  <div class="tittle">Design and Branding</div>
+</div>
+
+
+</div>
+
+<!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+  </div>
+
+<hr>
+  <footer>
+    <div class="wrapper">
+            <div class="icon facebook">
+                <a href="https://fb.me/Maledarising">
+                <span> <i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon telegram">
+                <a href="https://t.me/Maledarising">
+                <span> <i class="fab fa-telegram"></i></span>
+            </div>
+            <div class="icon tiktok">
+                <a href="https://www.tiktok.com/@maledarising?_t=8kYoJODejvp&_r=1">
+                <span> <i class="fab fa-tiktok"></i></span>
+            </div>
+        </div>
+        
+        <section class="rig">
+            <p> © All right reserved <br> 2024 </br> </p> 
+        </section>
+</footer>
+    <script src="app.js"></script>
+</body>
+</html>

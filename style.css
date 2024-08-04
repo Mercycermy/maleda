@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;809;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif, "Nokia Pure Headline";
+}
+body {
+    background: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header {
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1em;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+        }
+
+         .Rising {
+            padding: 20px 0px 0px 30px;
+    font-size: 1.5em;
+    color: #fffdef;
+    pointer-events: none;
+        }
+
+        nav {
+            padding: 20px 0px 0px 30px;
+            position: relative;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .det {
+            color: #f9f9f9;
+        }
+
+        .menu a {
+           text-decoration: none;
+    color: #fffdef;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+        }
+
+        .menu a:hover {
+            background: #ffdb94;
+    color: #000000;
+        }
+        .menu a.active{
+    background: #ffdb94;
+    color: #000000;
+}
+
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            cursor: pointer;
+            width: 150px;
+            text-align: end;
+            color: #fff;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            
+            .menu {
+                display: none;
+                flex-direction: column;
+                position:absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(to bottom, #d65a28, #f1683a);
+                width: 100%;
+                height: 200px;
+      
+
+            }
+
+            .menu  {
+                margin: 10%;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .menu  a {
+                padding: 1em;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+           .menu.show {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 480px) {
+           
+
+            .Rising {
+                font-size: 1.2em;
+            }
+
+            .menu  a {
+                padding: 1em;
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+
+
+.ማለዳ{
+
+    position: relative;
+    font-family: "Nokia Pure Headline";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    overflow: hidden;
+    
+}
+
+
+#text{
+    position: absolute;
+    font-family: 'poppins', sans-serif;
+    font-size: 4em;
+    color: #ff5100;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .2);
+    
+    
+}
+
+
+.ማለዳ img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 15;
+    width: 100%;
+    pointer-events: none;
+    
+    
+    
+}
+.scroll-down-arrow a{
+    text-decoration: none;
+    color: #fdffef;
+}
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 300px;
+    font-size: 2em;
+    color: #fefdfd;
+    animation: bounce 2s infinite;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.sec {
+    position: relative;
+    margin-top:0px;
+    margin-bottom: 0;
+    background-color: #020101;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    text-align: justify;
+
+}
+.sec h2{
+    font-size: 3em;
+    margin-top: -220px;
+    color: #ffa800;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    
+    overflow-y: hidden;
+}
+.rig p{
+    margin: 0;
+    text-align: center;
+    color: #fdffef;
+}
+
+.wrapper{
+    color: #fffb00;
+    position: relative;
+    display: inline-flex;
+    width: 20%;
+    margin: 3% 42%;    
+    justify-content: space-between;
+    
+
+}
+
+.wrapper a{
+    width: 20px;
+    height: 20px;
+    color: #ffd000;
+    padding: 5px;
+    
+}
+
+.wrapper :hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    
+}
+
+
+.about-us {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.about-us h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #ff6f00;
+}
+
+
+.section,.sectionreverse1 {
+    display: flex;
+    
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.sectionreverse1 {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+.text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fdffef;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+   
+
+}
+
+.section .image img{
+    margin-right: 200px;
+    margin-left: 0;
+}
+.section .text{
+text-align: center;
+}
+.sectionreverse1.text{
+ text-align: center;
+ 
+}
+.sectionreverse1 .image img{
+ margin-right: 0;
+    margin-left: 200px;
+}
+.image img {
+   margin: 0;
+    width: 400px;
+    height: 400px;    
+}
+
+.signup {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.signup p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#signup-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#signup-form button:hover {
+    background-color: #ff8c00;
+}
+@media (max-width: 768px) {
+    
+
+    .sec{
+        padding: 20px;
+    }
+    .sec h2{
+       font-size: 1.5em; 
+    }
+    .about-us h1 {
+        font-size: 1.5em;
+    }
+   
+    .section .image img{
+        margin-left: 0;
+    }
+    .image img{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .sectionreverse1.text{
+        width: 150px;
+        padding: 5px;
+    }
+    .section.text{
+        padding: 5px;
+        width: 150px;
+    }
+    .text h2{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+    .text p{
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+    .section .image img{
+    margin-right: 100px;
+}
+.sectionreverse1 .image img{
+    margin-left: 100px;
+}
+}
